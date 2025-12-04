@@ -1,209 +1,562 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
+  
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
   <title>João Gamboa</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-  <!-- FAVICON -->
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="manifest" href="site.webmanifest">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <style>
-    * { box-sizing: border-box; }
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Inter', sans-serif;
-      background: #000;
-      color: #fff;
-      line-height: 1.7;
-    }
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    .banner img {
-      width: 100%;
-      height: 280px;
-      object-fit: cover;
-      display: block;
-    }
+  
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-    .container {
-      max-width: 720px;
-      margin: 40px auto 70px;
-      padding: 0 20px;
-    }
-
-    /* TITLE + ICON WRAPPER */
-    .title-row { 
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 25px;
-    }
-
-    .title {
-      font-size: 35px;
-      font-weight: 600;
-      text-align: left;
-      margin: 0;
-    }
-
-    .linkedin-icon svg {
-      transition: opacity 0.15s ease;
-      cursor: pointer;
-    }
-
-    .linkedin-icon:hover svg {
-      opacity: 0.7;
-    }
-
-    .subtitle {
-      font-size: 17px;
-      color: #adb5bd;
-      text-align: left;
-      margin-bottom: 35px;
-      white-space: pre-line;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 22px;
-      margin-bottom: 20px;
-    }
-
-    .card {
-      border: 1px solid #adb5bd;
-      border-radius: 10px;
-      padding: 22px;
-      text-decoration: none;
-      color: inherit;
-      transition: border 0.15s ease, transform 0.15s ease;
-    }
-
-    .card:hover {
-      border-color: #fff;
-      transform: translateY(-3px);
-    }
-
-    .card-title {
-      font-size: 19px;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-
-    .card-subtitle {
-      font-size: 15px;
-      color: #adb5bd;
-      margin-bottom: 12px;
-      line-height: 1.5;
-    }
-
-    .card-link {
-      font-size: 15px;
-      color: #adb5bd;
-    }
-
-    .card-link:hover { color: #fff; }
-
-    .footer {
-      margin-top: 30px;
-      font-size: 14px;
-      color: #adb5bd;
-      text-align: left;
-    }
-
-    @media (max-width: 700px) {
-
-      .container {
-        max-width: 92%;
-        padding: 0 14px;
-      }
-
-      .title {
-        font-size: 30px;
-      }
-
-      .subtitle {
-        margin-bottom: 32px;
-      }
-
-      .grid {
-        grid-template-columns: 1fr;
-        gap: 18px;
-      }
-    }
-
-  </style>
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Mar 17 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
 
-<div class="banner">
-  <img src="banner.jpg" alt="Banner">
-</div>
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
-<div class="container">
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
 
-  <!-- TITLE + LINKEDIN ICON -->
-  <div class="title-row">
-    <div class="title">João Gamboa</div>
+      <div class="profile">
+        <img src="assets/img/profile-img.jpeg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">João Gamboa</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://www.facebook.com/joao.gamboa.marques/" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/joao_gamboa/" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/joaogamboam/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <!--<a href="mailto:joaogamboamarques@gmail.com" class="email"><i class="bx bx-envelope"></i></a>-->
+          <a download href="./CV_JoaoGamboa_EN.pdf" class="email"><i class="bx bx-file"></i></a>
+        </div>
+      </div>
 
-    <a href="https://www.linkedin.com/in/joaogamboam/" target="_blank" class="linkedin-icon">
-      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="#ffffff">
-        <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.3h.1c.5-1 1.8-2.3 3.9-2.3 4.2 0 5 2.7 5 6.2V24h-4v-8.2c0-2 0-4.5-2.8-4.5-2.8 0-3.2 2.2-3.2 4.3V24h-4V8z"/>
-      </svg>
-    </a>
-  </div>
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="mailto:joaogamboamarques@gmail.com"><i class="bx bx-envelope"></i> <span>Email </span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
 
-  <div class="subtitle">
-Aqui é onde me dou a conhecer e me obrigo a refletir.
-Se quiseres conversar just hit me up :)
-  </div>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>João Gamboa</h1>
+      <p><span class="typed" data-typed-items="UNI PORTFOLIO - MECHANICAL ENGINEERING"></span></p>
+    </div>
+  </section><!-- End Hero -->
+ 
+  <main id="main">
 
-  <div class="grid">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
 
-    <a class="card" href="about.html">
-      <div class="card-title">Quem Sou?</div>
-      <div class="card-subtitle">Uma tentativa de resumo pessoal. Os meus valores e a minha história.</div>
-      <div class="card-link">Abrir →</div>
-    </a>
+        <div class="section-title">
+          <h2>About Me</h2>
+          </div>
 
-    <a class="card" href="objectives.html">
-      <div class="card-title">Os meus Objetivos</div>
-      <div class="card-subtitle">A minha direção. Os meus objetivos definidos e como os vou atingir.</div>
-      <div class="card-link">Abrir →</div>
-    </a>
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right" >
+            <img src="assets/img/profile-img.jpeg" class="img-fluid" alt="" style="max-width: 110%; height: auto;">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" style="margin-left: 100px;">     
+            <h3>João António Gamboa Marques</h3>
+            <p class="fst-italic">
+              Last update early 2025
+            </p>
+            <div class="row">
+              <div class="col-lg-8">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>24</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Education:</strong> <span>MSc Mechanical Engineering</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>University:</strong> <span>University of Aveiro</span></li>
+                  </ul>
+              </div>
+              <div class="col-lg-8">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Nationalities:</strong>Portuguese & Spanish<span></span></li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Languages:</strong>
+                    <span style="white-space: nowrap;">Portuguese Native • English C2 • Spanish B2</span>
+                  </li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>joaogamboamarques@gmail.com</span></li>
+                  </ul>
+              </div>
+            </div>
+            <p>
+              
+              Organization and proactivity are my focus and guiding philosophies. 
+            <p>
+              Through them, I strive to add value to everything I engage in.
+          </div>
+        </div>
 
-    <a class="card" href="books.html">
-      <div class="card-title">As minhas Leituras</div>
-      <div class="card-subtitle">O que ando a ler e o que aprendi em cada livro que li.</div>
-      <div class="card-link">Abrir →</div>
-    </a>
+      </div>
+    </section><!-- End About Section -->
 
-    <a class="card" href="thesis.html">
-      <div class="card-title">Como tive 20 na tese</div>
-      <div class="card-subtitle">Aquilo que considero relevante para ter 20 na tese.</div>
-      <div class="card-link">Abrir →</div>
-    </a>
+    <!-- ======= Facts Section ======= -->
+    <section id="interests" class="interests" >
+      <div class="container">
 
-  </div>
+        <div class="section-title" >
+          <h2>Activities and Interests</h2>
+            <p><div class="activities-text" data-aos="fade-up">
+              Throughout my academic journey, I played an active role in student associations, fostering collaboration, leadership, and contributions to student life.
+            <p>I was on various handball teams for a decade, which allowed me to develop teamwork, resilience, and discipline crucial for thriving in engineering.
+            <p>
+            <p>
+            <p> Furthermore, my passion for data science and machine learning (ML) transcends the classroom, with applications in my master's thesis and my day-to-day life.
+            </p></div>  
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="row no-gutters">
 
-  <div class="footer">
-   
-   <em>“Loneliness is often the byproduct of a gifted mind” - Dr. Corin Reveck Singed 
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <div class="activities-wrapper">
+                <p><strong style="font-size: 20px;color: #173b6c">Handball <img src="assets/img/games.png" alt="handball" ></strong></p>
+              </div>  
+                <p>Over 10 years of experience competing at the Federation level</p>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="count-box">
+                <p><strong style="font-size: 20px;color: #173b6c";>Motorsport 🏁</strong></p>
+                <p>Competed in Motostudent-Spain and CNV-Portugal</p>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="count-box">
+                <p><strong style="font-size: 20px;color: #173b6c">Machine Learning 🧠</strong></p>
+                <p>Currently developing my Data-Science and Coding skills</p>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="count-box">
+                <p><strong style="font-size: 20px;color: #173b6c">Podcasts and Reading 📖</strong></p>
+                <p>Interested in Business, Economics, Philosophy, Startups</p>
+            </div>
+        </div>    
+        </div>
+        
 
-    <p></p>
+      </div>
+    </section><!-- End Facts Section -->
 
-   20/11/2025<br>J. Gamboa
+      <!-- ======= Skills Section ======= -->
+      <section id="skills" class="skills section-bg">
+        <div class="container">
 
-  </div>
+          <div class="section-title">
+            <h2>Skills</h2>
+          </div>
 
-</div>
+          <div class="row skills-content">
+
+            <div class="col-lg-3 col-md-6" data-aos="fade-up">
+              <div class="skill-box ">
+                <div class="icon-box">
+                  <h3>SolidWorks</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" >
+              <div class="skill-box ">
+                <div class="icon-box">
+                  <h3>Inventor</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6" data-aos="fade-up">
+              <div class="skill-box ">
+                <div class="icon-box">
+                  <h3>Abaqus</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6" data-aos="fade-up">
+              <div class="skill-box ">
+                <div class="icon-box">
+                  <h3>Python</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6" data-aos="fade-up">
+              <div class="skill-box ">
+                <div class="icon-box">
+                 <h3>Excel</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6" data-aos="fade-up">
+              <div class="skill-box ">
+                <div class="icon-box">
+                  <h3>Ultimaker Cura</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6" data-aos="fade-up">
+              <div class="skill-box ">
+                <div class="icon-box">
+                  <h3>Illustrator</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6" data-aos="fade-up">
+              <div class="skill-box ">
+                <div class="icon-box">
+                  <h3>Photoshop</h3>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section><!-- End Skills Section -->
+
+
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume - last ever update 2025</h2>
+          <p>
+
+          </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+          
+            <h3 class="resume-title">ACADEMIC EDUCATION</h3>
+            <div class="resume-item">
+              <h4>B.Sc., Mechanical Engineering - 12.3/20</h4>
+              <h5>2019 - 2022</h5>
+              <p><em>University of Aveiro, PT</em></p>
+              <ul>
+              <p>My engineering degree journey began with a solid foundation in fundamental sciences and engineering principles, progressively transitioning into an interdisciplinary integration of knowledge and industrial project experience.
+              </ul>
+              </div>
+
+            <div class="resume-item">
+              <h4>M.Sc., Mechanical Engineering - 17.2/20</h4>
+              <h5>2022 - 2024</h5>
+              <p><em>University of Aveiro, PT</em></p>
+              <ul>
+              <p>In my Master's program, there was a significant emphasis on hands-on practice and project-based learning.
+                 Throughout, I took on leadership roles, guiding teams through various projects that spanned R&D, manufacturing, and the integration of machine learning techniques.
+                </ul>
+                </div>
+
+            <div class="resume-item">
+              <h8>Dissertation</h8>
+              <h6>Parameter Identification of Elastoplastic Constitutive Laws using Machine Learning Techniques</h6>
+              <h5>20/20</h5>
+              <p><em>University of Aveiro, PT</em></p>
+              <ul>
+              <p>Training and testing XGboost-based machine learning models to predict the material constitutive parameters for sheet metal forming, characterizing the plastic behaviour of metallic sheets.
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h8>Paper - ESAFORM 24</h8>
+              <h6>Influence Of Data Filtering And Noise On The Calibration Of 
+                Constitutive Models Using Machine Learning Techniques</h6>
+              <h5>Toulouse, FR - Apr. 2024</h5>
+              
+              <p>In: Materials Research Proceedings, Volume 41, pp. 1807–1816.<br>
+                DOI: <a href="https://doi.org/10.21741/9781644903131">10.21741/9781644903131</a></p>
+            </div>
+
+            <div class="resume-item">
+              <h8>Conference - TEchMA 24 </h8>
+              <h6>Presenter at TEchMA 2024 International Conference <br>
+                Technologies for the Wellbeing and Sustainable Manufacturing Solutions
+                
+                </h6>
+              <h5>Aveiro, PT - Jun. 2024</h5>
+              
+              <p>
+                
+                Abstract: Parameter Identification of Elastoplastic Constitutive Laws using Machine Learning Techniques, pp. 84.
+                <br> 
+                
+                DOI: <a href="https://doi.org/10.48528/mehv-z227 ">10.48528/MEHV-Z227 </a> 
+            </p>
+            </div>
+
+          </div>
+
+
+
+
+          
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">PROFESSIONAL BACKGROUND AND <span class="grey-text">PROJECTS</span></h3>
+
+            <div class="resume-item">
+              <h4>Vulkan Additive Solutions - Co-Founder</h4>
+              <h5>Feb 2024 - Dec 2025</h5>
+              <p><em>Remote, PT </em></p>
+              <ul>
+                <li>My first serious business, helping polymer AM companies industrialize. Closed clients in Denmark and Germany.
+                  </li>
+                
+              </ul>
+            </div>
+
+
+            <div class="resume-item">
+              <h4>COFICAB - Processes Development Specialist Trainee</h4>
+              <h5>Jul 2024 - Aug 2024</h5>
+              <p><em>Guarda, PT </em></p>
+              <ul>
+                <li>Acquired comprehensive knowledge of cable development, including its definition, testing, and manufacturing processes.
+                  </li>
+                
+              </ul>
+            </div>
+            
+
+
+            <div class="resume-item">
+              <h4><span class="grey-text">Motochanics - Data Analyst</span></h4>
+              <h5>Oct 2023 - Apr 2024</h5>
+               <ul>
+                
+                  <li>
+                    After competing in Aragon, Spain, I transitioned to the racing department, where I now provide essential engineering support for the motorcycle in the PREMOTO3 category at CNV Portugal.
+                  </li>
+
+                  <li>
+                    Currently serving as a telemetry data analyst, analyzing trajectories and on-track driver behavior to provide detailed feedback and strategic recommendations for enhanced performance and competitive advantage.</li>
+
+              </ul>
+            </div>
+            
+            <div class="resume-item">
+              <h4>Jerónimo Martins Ambassador</h4>
+              <h5>Oct 2023 - June 2024</h5>
+              <p><em>Lisboa, PT </em></p>
+              <ul>
+                <li>Bridged the gap between the university and the company by
+                  presenting the company's culture, vision, and
+                  student programs.
+                  </li>
+                
+              </ul>
+            </div>
+
+
+            <div class="resume-item">
+              <h4>Rodrimaq CNC Operator Trainee</h4>
+              <h5>July - Aug 2023</h5>
+              <p><em>Aveiro, PT</em></p>
+              <ul>
+                <li>Functioned as a CNC operator, honing practical machining skills.
+                  Engineered and manufactured components for clients, addressing
+                  technical challenges, problem-solving and ensuring precision.                  
+                  </li>
+                  
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4><span class="grey-text">Mobility Operational Services - Co-Founder/R&D </span></h4>
+              <h5>2019 - Oct 2023</h5>
+               <ul>
+                <li>Developed an innovative wheelchair add-on to enhance mobility and presented it to stakeholders, strengthening negotiation skills.    
+                  
+                  
+                  </li>
+                  
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4><span class="grey-text">Motochanics - R&D </span></h4>
+              <h5>2019 - Oct 2023</h5>
+               <ul>
+                <li>Developed, dimensioned and manufactured a chassis for a racing
+                  motorcycle. Led parts manufacturing with external companies,
+                  fostering teamwork, CAD, CAM, FEA. Competing Internationally.    
+                  
+                  
+                  </li>
+                  
+              </ul>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= define resolution entry 800x600 and inside 800x600 -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Welcome to my portfolio! Here, you'll find a showcase of my most impactful projects. Each project reflects my dedication to innovative design, cutting-edge technology, and a passion for solving complex problems.</div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap" onclick="location.href='1Motochanics.html'">
+              <img src="assets/img/portfolio/motochanics.jpg" class="img-fluid" alt="">
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap" onclick="location.href='2Rodrimaq.html'">
+              <img src="assets/img/portfolio/rodrimaq.jpg" class="img-fluid" alt="">
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap" onclick="location.href='3FordBronco.html'">
+              <img src="assets/img/portfolio/PME.png" class="img-fluid" alt="">
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap" onclick="location.href='4Robo.html'">
+              <img src="assets/img/portfolio/robochanics.png" class="img-fluid" alt="">
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap" onclick="location.href='5MOS.html'">
+              <img src="assets/img/portfolio/mos.jpg" class="img-fluid" alt="">
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap" onclick="location.href='6Elevator.html'">
+              <img src="assets/img/portfolio/jtjd.jpg" class="img-fluid" alt="">
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap" onclick="location.href='8Horta.html'">
+              <img src="assets/img/portfolio/verde.jpg" class="img-fluid" alt="">
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap" onclick="location.href='9Redutor.html'">
+              <img src="assets/img/portfolio/ipm.jpg" class="img-fluid" alt="">
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap" onclick="location.href='7PST.html'">
+              <img src="assets/img/portfolio/pst.jpg" class="img-fluid" alt="">
+              
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy;  <strong><span>João Gamboa</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
